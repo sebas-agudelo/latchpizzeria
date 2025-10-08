@@ -80,7 +80,7 @@ export default function Home({ className }: HomeProps) {
                     </div>
 
                     <div className='home-about-preview-text'>
-                        <h2>LATCH PIZZA </h2>
+                        <h2>LATCH PIZZERIA</h2>
                         
                         <h3>
                              ALLTID NYTT, ALLTID GOTT <br/>
@@ -96,6 +96,7 @@ export default function Home({ className }: HomeProps) {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe facere, officiis, repellendus eligendi doloribus ipsam quia itaque exercitationem ratione sapiente incidunt fugiat rem et laborum dolorem rerum quod. Harum.
                            
                         </motion.p>
+                        
                         {/* <div className='read-more-btn'>
                             <Link to={`about`}>Om oss</Link>
                         </div> */}
