@@ -54,7 +54,7 @@ export default function Home({ className }: HomeProps) {
                 </div>
             </div>
 
-            <section className={`home-favorite-products-container ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
+            <div className={`home-favorite-products-container ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
                 <h2 className='favorite-product-header'>FAVORITES</h2>
 
                 {selectedFavorites.map((p) => (
@@ -70,41 +70,36 @@ export default function Home({ className }: HomeProps) {
 
                     </div>
                 ))}
-            </section>
+            </div>
 
-
-            {/* 
-
-            <section className='app-home-speciality-wrapper'>
-
-
-                <div className='speciality-img'>
-                    <img src="pexels-bluerhinomedia-2788792.jpg" alt="" />
-                </div>
-
-                <div className='app-home-speciality-content'>
-
-                    <h2>LATCH PIZZA</h2>
-
-                    <h3>Authentic Flavors</h3>
-
-                    <motion.p
-                        initial={{ opacity: 0, x: -100 }}       // utgångsläge
-                        whileInView={{ opacity: 1, x: 0 }}      // när den syns i viewport
-                        transition={{ duration: 0.8, ease: "linear" }}
-                        viewport={{ once: true, amount: 1 }}               // kör bara en gång
-                    >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe facere, officiis, repellendus eligendi doloribus ipsam quia itaque exercitationem ratione sapiente incidunt fugiat rem et laborum dolorem rerum quod. Harum.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eius ea eos alias eaque laboriosam at nostrum quis repellendus hic nam vero, quas cupiditate facilis in sunt sit. Eveniet, cumque?
-                    </motion.p>
-                    <div className='read-more-btn'>
-                        <Link to={`about`}>Read more</Link>
+            <div className='home-about-preview-container'>
+                <div className='home-about-preview-content'>
+                    <div className='home-about-img'>
+                        <img src="pexels-bluerhinomedia-2788792.jpg" alt="" />
                     </div>
 
+                    <div className='home-about-preview-text'>
+                        <h2>LATCH PIZZA</h2>
+
+                        {/* <h3>Authentic Flavors</h3> */}
+
+                        <motion.p
+                            initial={{ opacity: 0, x: -100 }}       // utgångsläge
+                            whileInView={{ opacity: 1, x: 0 }}      // när den syns i viewport
+                            transition={{ duration: 0.8, ease: "linear" }}
+                            viewport={{ once: true, amount: 0.5 }}               // kör bara en gång
+                        >
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis saepe facere, officiis, repellendus eligendi doloribus ipsam quia itaque exercitationem ratione sapiente incidunt fugiat rem et laborum dolorem rerum quod. Harum.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eius ea eos alias eaque laboriosam at nostrum quis repellendus hic nam vero, quas cupiditate facilis in sunt sit. Eveniet, cumque?
+                        </motion.p>
+                        {/* <div className='read-more-btn'>
+                            <Link to={`about`}>Om oss</Link>
+                        </div> */}
+                    </div>
                 </div>
+            </div>
 
-            </section>
-
+            {/* 
             <section className='blabla'>
                 <section className='app-more-pizzas-wrapper'>
                     <section className='app-more-pizzas-content'>
