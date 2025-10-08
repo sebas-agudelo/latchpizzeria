@@ -81,7 +81,7 @@ export default function Home({ className }: HomeProps) {
                     <div className='home-about-preview-text'>
                         <h2>LATCH PIZZA</h2>
 
-                        {/* <h3>Authentic Flavors</h3> */}
+                        <h3>Authentic Flavors</h3>
 
                         <motion.p
                             initial={{ opacity: 0, x: -100 }}       // utgångsläge
@@ -99,40 +99,32 @@ export default function Home({ className }: HomeProps) {
                 </div>
             </div>
 
-            {/* 
-            <section className='blabla'>
-                <section className='app-more-pizzas-wrapper'>
-                    <section className='app-more-pizzas-content'>
-                        <article>
-                            <div className='more-product-img'>
-                                <img src="latch.jpg" alt="" />
-                            </div>
+            <div className='home-hours-container'>
+                <div className='home-hours-img-container'>
+                    <div className='home-hours-img'>
+                        <img src="latch.jpg" alt="" />
+                    </div>
+                </div>
 
-                        </article>
-
-                    </section>
-
-                </section>
-
-                <section className='app-pickup-wrapper'>
-
-                    <section className='app-pickup-content'>
-                        <h2>LATCH ÖPPETTIDER</h2>
-                        <p>Mån-Tors: 10:00 - 23:00</p>
-                        <p>Fre-Lör: 10:00 - 03:00</p>
-                        <p>Sön: Stängt</p>
-
-
-                        <div className='btns'>
-                            <button className='more-pizza-se-menu-btn'><Link to={`/menu`}>VÅR MENY</Link></button>
-                            <button><Link to={`tel:0700000000`}>RING OSS</Link></button>
+                <div className='home-hours-info-container'>
+                    <div className='home-hours-info-content'>
+                        <div className='home-hours-info'>
+                            <h2>LATCH ÖPPETTIDER</h2>
+                            <p>Mån-Tors: 10:00 - 23:00</p>
+                            <p>Fre-Lör: 10:00 - 03:00</p>
+                            <p>Sön: Stängt</p>
                         </div>
 
-                    </section>
+                        <div className='home-hours-btns-container'>
+                            <button className='more-pizza-se-menu-btn'><Link to={`https://www.google.com/maps/dir//Eleonoragatan+4,+633+43+Eskilstuna/@59.3761999,16.4324066,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x465ef2c96c4468c3:0x51523b9f1b02b8ce!2m2!1d16.5148063!2d59.3762259?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D`}>HITTA OSS</Link></button>
+                            <button><Link to={`tel:0700000000`}>RING OSS</Link></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </section>
-
-            </section>
+            {/* 
+           
 
             <section className='last-container'>
                 <div className='vin-text-container'>
