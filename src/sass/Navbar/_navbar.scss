@@ -1,0 +1,244 @@
+nav {
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+
+    .open-burger-menu-container{
+        width: 33%;
+        display: flex;
+        align-items: center;
+
+        button {
+            display: block;
+            background: none;
+            border-style: none;
+
+            svg {
+                font-size: 2.3rem;
+                fill: #fbca49;
+                // color: #ffd82b;
+            }
+        }
+    }
+
+    .nav-logo-container {
+        width: 100px;
+        height: 45px;
+
+        .logo {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+    }
+
+    .nav-order-btn-container {
+        display: none;
+
+
+        button {
+            background: none;
+            border-style: none;
+            background-color: #ffd82b0e;
+            border-bottom: 1px solid #ffd82b41;
+            border-radius: 0 1rem 1rem 1rem;
+            padding: 0.5rem 3rem;
+            font-weight: 900;
+
+            cursor: pointer;
+
+            a {
+                font-family: "Love Ya Like A Sister", cursive;
+                font-style: normal;
+                font-weight: 400;
+                color: #ffd82b;
+                font-size: 16px;
+                text-decoration: none;
+
+            }
+        }
+    }
+
+    .mobile-menu {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 850ms ease-in-out;
+        background-color: #b3a27e;
+        padding: 0 1.5rem;
+
+        .close-nav-btn-container {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: end;
+
+            button {
+                background: transparent;
+                border-style: none;
+                display: block;
+
+                svg {
+                    font-size: 2.8rem;
+                    fill: #fbca49;
+                }
+            }
+        }
+
+        .mobile-nav-links-logo-container {
+            width: 100px;
+            height: 45px;
+            margin-top: 4rem;
+
+            .logo-img-container {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        ul {
+            width: 100%;
+            margin-top: 2rem;
+            padding: 0 0.7rem;
+
+            li {
+                list-style: none;
+                padding: 0 0 2rem;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+
+    .mobile-menu.open {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        .open-burger-menu-container {
+            display: none;
+        }
+
+        .mobile-menu {
+            background: transparent;
+            position: initial;
+            left: 100%;
+            top: 0%;
+            transform: none;
+            height: auto;
+            width: 33%;
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+
+            transition: 0s;
+
+            .mobile-nav-links-logo-container {
+                display: none;
+            }
+
+            .close-nav-btn-container {
+                display: none;
+            }
+
+            ul {
+                width: 100%;
+                margin-top: 0;
+                padding: 0;
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    padding: 0;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu.open {
+            transform: none;
+        }
+
+        .nav-logo-container {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                width: 33%;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .nav-order-btn-container {
+            width: 33%;
+            text-align: end;
+            display: block;
+
+
+            button {
+                background: none;
+                border-style: none;
+                background-color: #ffd82b0e;
+                border-bottom: 1px solid #ffd82b41;
+                border-radius: 0 1rem 1rem 1rem;
+                padding: 0.5rem 3rem;
+                font-weight: 900;
+
+                cursor: pointer;
+
+                a {
+                    font-family: "Love Ya Like A Sister", cursive;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #ffd82b;
+                    font-size: 16px;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}

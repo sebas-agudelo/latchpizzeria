@@ -1,0 +1,37 @@
+@use './Navbar/navbar';
+@use './Login//login';
+@use './Home/home';
+@use './Products/products';
+@use './Contact/Contact';
+@use './Footer/Footer';
+@use './Categories/categories';
+@use "./Menu/menu";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-size: ;
+    color: #2b1d1d;
+
+}
+
+h1, h2, h3, h4, h5{
+     font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+p, a, li{
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+
+
