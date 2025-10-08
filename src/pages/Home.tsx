@@ -3,19 +3,30 @@ import Nav from '../components/Nav';
 import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import { motion } from "framer-motion";
+import { IProducts } from '../module/Ip';
+import { products } from '../data/productData';
 
 interface HomeProps {
     className?: string; // Gör className optional
 }
 
 export default function Home({ className }: HomeProps) {
+    const [allProducts, setAllProducts] = useState<IProducts[]>([])
     const [isVisible, setIsVisible] = useState(false);
-    const [isFullyScrolled, setIsFullyScrolled] = useState(false);
+    const [isFullyScrolled, setIsFullyScrolled] = useState();
 
     const images = [
         { imgUrl: "pizza-1344720_1920.jpg" },
         { imgUrl: "bildute.jpg" }
     ]
+
+    if (allProducts.length === 0) {
+        setAllProducts(products)
+    };
+
+    const selectedFavorites = allProducts.filter((p, index) => index === 1 || index === 2 || index === 4);
+
+    console.log("Utvalda favoriter: ", selectedFavorites);
 
     return (
         <div className='home'>
@@ -35,7 +46,7 @@ export default function Home({ className }: HomeProps) {
                 </div>
 
                 <div className='home-hero-content'>
-                    <h1 className={`h2-gusto-pizza-1 ${className}`}>VÄLKOMMEN</h1>
+                    <h1>VÄLKOMMEN</h1>
 
                     <button>
                         <Link to={`/meny`}>SE VÅR MENY</Link>
@@ -43,48 +54,26 @@ export default function Home({ className }: HomeProps) {
                 </div>
             </div>
 
-            {/* <section className={`app-home-favarite-products-wrapper ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
+            <section className={`home-favorite-products-container ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
                 <h2 className='favorite-product-header'>FAVORITES</h2>
-                <article className='app-home-favarite-products-content'>
-                    <article>
-                        <div className='home-product-img'>
-                            <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="" />
+
+                {selectedFavorites.map((p) => (
+                    <div className='home-favorite-products-content'>
+                        <div className='home-favorite-product-img'>
+                            <img src={p.product_img} alt={p.product_img} />
                         </div>
 
-                        <div className='app-product-info'>
-                            <h3 className='product-name'>Grillrätter</h3>
-                            <p className='product-desc'>Våra favoriter i grillköket är bl.a kycklingspett & mixgrilltallriken.</p>
-
-                            <h3 className='product-price'>$11</h3>
+                        <div className='home-favorite-product-info'>
+                            <h3>{p.product_name}</h3>
+                            <p>{p.products_desc}</p>
                         </div>
 
-                    </article>
-                    <article>
-                        <div className='home-product-img'>
-                            <img src="/kebabpizza.png" alt="" />
-                        </div>
-                        <div className='app-product-info'>
-                            <h3 className='product-name'>Kebab Pizza</h3>
-                            <p className='product-desc'>Kebab pizza med rödsås och vitsås, tomat, rök, romansallad och gurka.</p>
-                            <h3 className='product-price'>$11</h3>
-
-                        </div>
-                    </article>
-                    <article>
-                        <div className='home-product-img'>
-                            <img src="pizza-1344720_1920.jpg" alt="" />
-                        </div>
-                        <div className='app-product-info'>
-                            <h3 className='product-name'>Margherita Pizza</h3>
-                            <p className='product-desc'>Margarita med tomatsås, basilika och ost</p>
-                            <h3 className='product-price'>$12</h3>
-       
-                        </div>
-                    </article>
-
-                </article>
-
+                    </div>
+                ))}
             </section>
+
+
+            {/* 
 
             <section className='app-home-speciality-wrapper'>
 
