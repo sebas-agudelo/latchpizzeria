@@ -29,6 +29,7 @@ export default function Home({ className }: HomeProps) {
     console.log("Utvalda favoriter: ", selectedFavorites);
 
     return (
+        <>
         <div className='home'>
             <div className='home-hero-container'>
                 <div className='home-hero-video-container'>
@@ -157,8 +158,9 @@ export default function Home({ className }: HomeProps) {
                 </div>
             </section> */}
 
-            {/* <Footer /> */}
+             <Footer /> 
         </div>
+             </>
     );
 }
 
