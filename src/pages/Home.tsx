@@ -162,7 +162,7 @@ export default function Home({ className }: HomeProps) {
                 </div>
             </section> */}
 
-             <Footer /> 
+    <Footer /> 
         </div>
              </>
     );

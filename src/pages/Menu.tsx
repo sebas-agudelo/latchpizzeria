@@ -254,7 +254,7 @@ export const Menu = () => {
             </div> */}
 
         </section>
-            {/* <Footer />  */}
+            <Footer /> 
             </>
     )
 }
