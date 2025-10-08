@@ -79,7 +79,9 @@ nav {
         left: 0;
         transform: translateX(-100%);
         transition: transform 850ms ease-in-out;
-        background-color: #332d1f;
+        // background-color: #332d1f;
+        background-color: #00000073;
+
         padding: 0 1.5rem;
 
         .close-nav-btn-container {

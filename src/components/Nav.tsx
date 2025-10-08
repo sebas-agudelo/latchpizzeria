@@ -24,7 +24,7 @@ export default function Nav() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.3, 
+                staggerChildren: 0.3,
             },
         },
     };
@@ -48,7 +48,7 @@ export default function Nav() {
                         <button
                             onClick={() => { setIsMenuOpen(!isMenuOpen) }}
                         >
-                            <IoCloseSharp id='close-nav-icon'/>
+                            <IoCloseSharp id='close-nav-icon' />
                         </button>
                     </div>
 
@@ -81,12 +81,13 @@ export default function Nav() {
                     </motion.ul>
                 </div>
 
-                <div className='nav-logo-container'>
+                {isMenuOpen ? null : <div className='nav-logo-container'>
                     <div className='logo'>
                         <img src="latch-logo-v4.png" alt="Logo" />
                     </div>
 
-                </div>
+                </div>}
+
 
                 <div className='nav-order-btn-container'>
                     <button>
