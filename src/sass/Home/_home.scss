@@ -142,13 +142,13 @@ $marginTop: 1.5rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
                 padding: 0 1rem;
 
                 h2 {
                                             font-size: 2.2rem;
                         
-                    text-align: center;
+                    // text-align: center;
                     color: #5a5a5a;
                     margin: 0 0 0.5rem;
 
@@ -156,15 +156,27 @@ $marginTop: 1.5rem;
                 }
 
                 h3{
-                     font-size: 1.5rem;
-                    text-align: center;
-                    color: #fbca49;
-                    margin: 0 0 1rem;
+                     font-size: 1.8rem;
+                     position: relative;
+                 
+                                       color: #5a5a5a;
+
+                    margin: 0 0 2.5rem;
+                }
+                h3::after{
+content: "";
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            width: 45%;
+            transform: translate(-0%, -0%);
+            border-bottom: 1px solid #fbca49;
+            margin:  -1rem 0;
                 }
 
                 p {
-                    font-size: 1rem;
-                    text-align: center;
+                    font-size: 0.79rem;
+                    // text-align: center;
 
                 }
             }

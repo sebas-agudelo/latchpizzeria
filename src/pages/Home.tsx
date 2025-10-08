@@ -80,9 +80,12 @@ export default function Home({ className }: HomeProps) {
                     </div>
 
                     <div className='home-about-preview-text'>
-                        <h2>LATCH PIZZA</h2>
-
-                        <h3>Authentic Flavors</h3>
+                        <h2>LATCH PIZZA </h2>
+                        
+                        <h3>
+                             ALLTID NYTT, ALLTID GOTT <br/>
+                             FRÅN VÅR KÖK TILL DITT BORD 
+                        </h3>
 
                         <motion.p
                             initial={{ opacity: 0, x: -100 }}       // utgångsläge
