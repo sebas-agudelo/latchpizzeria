@@ -19,10 +19,8 @@ export default function Home({ className }: HomeProps) {
 
     return (
         <div className='home'>
-
-            <div className='hero-section'>
-
-                <div className='hero-img'>
+            <div className='home-hero-container'>
+                <div className='home-hero-video-container'>
                     <motion.video
                         src="ppp.mp4"
                         autoPlay
@@ -34,24 +32,18 @@ export default function Home({ className }: HomeProps) {
                         transition={{ duration: 2.8, ease: "linear" }}
                         viewport={{ once: true }}
                     />
-
-                </div>
-                <div className='product-info'>
-                    <div className='h2-gusto-pizza'>
-
-                        <h1 className={`h2-gusto-pizza-1 ${className}`}>VÄLKOMMEN</h1>
-                    </div>
-
-                    <div className='hero-order-btns'>
-                        <button>
-                            <Link to={`/meny`}>SE ALL MENU</Link>
-                        </button>
-                    </div>
                 </div>
 
+                <div className='home-hero-content'>
+                    <h1 className={`h2-gusto-pizza-1 ${className}`}>VÄLKOMMEN</h1>
+
+                    <button>
+                        <Link to={`/meny`}>SE VÅR MENY</Link>
+                    </button>
+                </div>
             </div>
 
-            <section className={`app-home-favarite-products-wrapper ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
+            {/* <section className={`app-home-favarite-products-wrapper ${isVisible && !isFullyScrolled ? 'visible' : ''}`}>
                 <h2 className='favorite-product-header'>FAVORITES</h2>
                 <article className='app-home-favarite-products-content'>
                     <article>
@@ -64,12 +56,6 @@ export default function Home({ className }: HomeProps) {
                             <p className='product-desc'>Våra favoriter i grillköket är bl.a kycklingspett & mixgrilltallriken.</p>
 
                             <h3 className='product-price'>$11</h3>
-
-                            {/* <div className='buy-btn'>
-                                <button>
-                                    <Link to={``}>Order</Link>
-                                </button>
-                            </div> */}
                         </div>
 
                     </article>
@@ -82,11 +68,6 @@ export default function Home({ className }: HomeProps) {
                             <p className='product-desc'>Kebab pizza med rödsås och vitsås, tomat, rök, romansallad och gurka.</p>
                             <h3 className='product-price'>$11</h3>
 
-                            {/* <div className='buy-btn'>
-                                <button>
-                                    <Link to={``}>Order</Link>
-                                </button>
-                            </div> */}
                         </div>
                     </article>
                     <article>
@@ -97,11 +78,7 @@ export default function Home({ className }: HomeProps) {
                             <h3 className='product-name'>Margherita Pizza</h3>
                             <p className='product-desc'>Margarita med tomatsås, basilika och ost</p>
                             <h3 className='product-price'>$12</h3>
-                            {/* <div className='buy-btn'>
-                                <button>
-                                    <Link to={``}>Order</Link>
-                                </button>
-                            </div> */}
+       
                         </div>
                     </article>
 
@@ -156,7 +133,6 @@ export default function Home({ className }: HomeProps) {
                 <section className='app-pickup-wrapper'>
 
                     <section className='app-pickup-content'>
-                        {/* <h2>BESTÄLL</h2> */}
                         <h2>LATCH ÖPPETTIDER</h2>
                         <p>Mån-Tors: 10:00 - 23:00</p>
                         <p>Fre-Lör: 10:00 - 03:00</p>
@@ -203,9 +179,9 @@ export default function Home({ className }: HomeProps) {
 
 
                 </div>
-            </section>
+            </section> */}
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
