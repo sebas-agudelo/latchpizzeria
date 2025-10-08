@@ -79,7 +79,7 @@ nav {
         left: 0;
         transform: translateX(-100%);
         transition: transform 850ms ease-in-out;
-        background-color: #b3a27e;
+        background-color: #72654a;
         padding: 0 1.5rem;
 
         .close-nav-btn-container {
@@ -95,7 +95,9 @@ nav {
 
                 svg {
                     font-size: 2.8rem;
-                    fill: #fbca49;
+                    // fill: #fbca49;
+                    fill: #fff;
+
                 }
             }
         }
