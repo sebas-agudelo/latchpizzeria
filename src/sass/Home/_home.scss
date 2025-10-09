@@ -115,10 +115,6 @@ $marginTop: 1.5rem;
     .home-about-preview-container {
         width: 100%;
         height: auto;
-        // overflow: hidden;
-        // padding: ;
-
-        // background-color: #0000000a;
 
         .home-about-preview-content {
             width: 100%;
@@ -140,32 +136,16 @@ $marginTop: 1.5rem;
                 width: 100%;
                 height: auto;
                 padding: 3rem 1rem;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-                // padding: 0 1rem;
-
+             
                 h2 {
                     font-size: 2.6rem;
-
-                    // text-align: center;
-                    // color: #5a5a5a;
-                    // color: #fbca49;
-
                     margin: 0 0 0.5rem;
-
-
                 }
 
                 h3 {
                     font-size: 1.8rem;
                     position: relative;
-
-                    // color: #5a5a5a;
                     color: #fbca49;
-
-
                     margin: 0 0 2.5rem;
                 }
 
@@ -176,16 +156,13 @@ $marginTop: 1.5rem;
                     bottom: 0%;
                     width: 45%;
                     transform: translate(-0%, -0%);
-                    border-bottom: 1px solid #fbca49;
+                    border-bottom: 2px solid #fbca49;
                     margin: -1.3rem 0;
                 }
 
                 p {
                     font-size: 0.87rem;
-                    line-height: 1.8;
-                    // letter-spacing: 0 1rem;
-                    // text-align: center;
-
+                    line-height: 1.9;
                 }
             }
         }

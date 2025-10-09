@@ -3,8 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
-import { AiOutlineMenu } from "react-icons/ai";
-
+import { RiMenu2Line } from "react-icons/ri";
 
 
 export default function Nav() {
@@ -39,7 +38,7 @@ export default function Nav() {
             <nav>
                 <div className='open-burger-menu-container'>
                     <button onClick={() => { setIsMenuOpen(!isMenuOpen) }}>
-                        <AiOutlineMenu />
+                        <RiMenu2Line />
                     </button>
                 </div>
 
