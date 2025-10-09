@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,11 +6,32 @@ import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { CiPizza } from "react-icons/ci";
 import { CiBurger } from "react-icons/ci";
+import { IProducts } from "../module/Ip";
+import { products } from "../data/productData";
+import { P } from "framer-motion/dist/types.d-DsEeKk6G";
 
 export const Menu = () => {
+    const [allProducts, setAllProducts] = useState<IProducts[]>([])
+
+    if (allProducts.length === 0) {
+        setAllProducts(products)
+    }
+
+    // console.log(allProducts);
+
+    const selectedCategories = allProducts.map((c) => c.category)
+        .filter((cc, aa, array) => array.indexOf(cc) === aa);
+
+    // const selectedCategories: string[] = [];
+    // allProducts.forEach((c) => {
+    //     if (!selectedCategories.includes(c.category)) {
+    //         selectedCategories.push(c.category);
+    //     }
+    // });
+
     const settings = {
-        dots: false,          // 🔹 Visas pillarna
-        arrows: false,          // 🔹 Visas knapparna
+        dots: false,      
+        arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -20,13 +41,58 @@ export const Menu = () => {
         speed: 1350,
         autoplaySpeed: 10000,
         cssEase: "linear",
-        pauseOnHover: false, // 🔹 stoppar inte vid hover
-        pauseOnFocus: false  // 🔹 stoppar inte vid focus
+        pauseOnHover: false,
+        pauseOnFocus: false
     };
     return (
         <>
-        <section className="m-menu-container">
-            {/* <div className="m-menu-hero-container">
+            <section className="menu-container">
+                 <div className="menu-hero">
+                <Slider {...settings} className="menu-slider">
+                    <div className="menu-slider-img">
+                        <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
+                    </div>
+                    <div className="menu-slider-img">
+                        <img src="olikapizzor.jpg" alt="Bild 2" />
+                    </div>
+                    <div className="menu-slider-img">
+                        <img src="bildute.jpg" alt="Bild 3" />
+                    </div>
+                </Slider>
+
+                <div className="menu-hero-content">
+                        <h1>VÅR MENY</h1>
+                        <div className="menu-hero-buttons">
+                            <Link to={``}>Pizza</Link>
+                            <Link to={``}>Kebabrätter</Link>
+                            <Link to={``}>Grillrätter</Link>
+                            <Link to={``}>Hamburgare</Link>
+                            <Link to={``}>Sallad</Link>
+                        </div>
+                </div>
+            </div>
+                {
+                    selectedCategories.map((category) => (
+                        <div>
+                            <h2>{category.toUpperCase()}</h2>
+
+                            {
+                                allProducts.filter((p) => p.category === category)
+                                    .map((p) => (
+
+                                        <div>
+                                            <h3>{p.product_name}</h3>
+                                            <p>{p.products_desc}</p>
+                                            <p>{p.product_price}</p>
+                                        </div>
+                                    ))
+                            }
+                        </div>
+
+                    ))
+                }
+              
+                {/* <div className="m-menu-hero-container">
                 <Slider {...settings} className="m-h-img-container">
                     <div className="m-h-img-wrapper">
                         <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
@@ -253,8 +319,8 @@ export const Menu = () => {
                 </div>
             </div> */}
 
-        </section>
-            <Footer /> 
-            </>
+            </section>
+            <Footer />
+        </>
     )
 }

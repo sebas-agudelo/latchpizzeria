@@ -8,8 +8,6 @@ import { RiMenu2Line } from "react-icons/ri";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
-
 
     const navLinks = [
         { label: "Startsida", path: "/" },

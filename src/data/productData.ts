@@ -40,5 +40,13 @@ export const products: IProducts[] = [
         products_desc: "Bröd, kött, ost, sallad, tomat, lök & sås",
         product_price: 105,
         category: "hamburgare"
-    }
+    },
+     {
+        id: 6,
+        product_img: "",
+        product_name: "Kebab tallrik",
+        products_desc: "Pommes/ris, kebab, sallad, tomat, lök, peperoni & sås",
+        product_price: 98,
+        category: "kebabrätter"
+    },
 ]
