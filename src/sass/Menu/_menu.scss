@@ -103,13 +103,13 @@
 
 
         .menu-highlight-item {
-            padding: 2rem 3rem;
+            padding: 2rem 0;
             text-align: center;
             position: relative;
             
             .menu-highlight-item-img {
-                width: 150px;
-                height: 150px;
+                width: 168px;
+                height: 168px;
                 border-radius: 50%;
                 background-color: #000000;
                 margin: 0 auto;
@@ -125,9 +125,9 @@
             .menu-highlight-item-details{
                 h3{
                     position: absolute;
-                    top: 60%;
+                    top: 57%;
                     left: 50%;
-                    transform: translate(-50%, -60%);
+                    transform: translate(-50%, -57%);
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
                     display: flex;
                     justify-content: center;
@@ -143,9 +143,10 @@ border-radius: 0 1rem 1rem 1rem;
                 }
                 
                 p{
+                    width: 290px;
                     font-size: 0.87rem;
                     // padding: 0 3rem;
-                    margin-top: 3rem;
+                    margin: 2rem auto 0;
 
                 }
             }
