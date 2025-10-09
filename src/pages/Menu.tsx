@@ -30,7 +30,7 @@ export const Menu = () => {
     // });
 
     const settings = {
-        dots: false,      
+        dots: false,
         arrows: false,
         infinite: true,
         slidesToShow: 1,
@@ -47,20 +47,20 @@ export const Menu = () => {
     return (
         <>
             <section className="menu-container">
-                 <div className="menu-hero">
-                <Slider {...settings} className="menu-slider">
-                    <div className="menu-slider-img">
-                        <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
-                    </div>
-                    <div className="menu-slider-img">
-                        <img src="olikapizzor.jpg" alt="Bild 2" />
-                    </div>
-                    <div className="menu-slider-img">
-                        <img src="bildute.jpg" alt="Bild 3" />
-                    </div>
-                </Slider>
+                <div className="menu-hero">
+                    <Slider {...settings} className="menu-slider">
+                        <div className="menu-slider-img">
+                            <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
+                        </div>
+                        <div className="menu-slider-img">
+                            <img src="olikapizzor.jpg" alt="Bild 2" />
+                        </div>
+                        <div className="menu-slider-img">
+                            <img src="bildute.jpg" alt="Bild 3" />
+                        </div>
+                    </Slider>
 
-                <div className="menu-hero-content">
+                    <div className="menu-hero-content">
                         <h1>VÅR MENY</h1>
                         <div className="menu-hero-buttons">
                             <Link to={``}>Pizza</Link>
@@ -69,8 +69,37 @@ export const Menu = () => {
                             <Link to={``}>Hamburgare</Link>
                             <Link to={``}>Sallad</Link>
                         </div>
+                    </div>
                 </div>
-            </div>
+
+                <div className="menu-description">
+
+                    <p>Vår meny bjuder på det bästa av två världar – krispiga pizzor direkt ur ugnen och grillat med härlig rökig smak. Alltid med färska råvaror och passion i varje tugga.</p>
+                </div>
+
+                <div className="menu-highlights">
+                    <div className="menu-highlight-item">
+                        <div className="menu-highlight-item-img">
+                            <img src="olikapizzor.jpg" alt="Pizzor" />
+                        </div>
+                        <div className="menu-highlight-item-details">
+                            <h3>DAGENS LUNCH</h3>
+                            <p>Njut av våra populära grillrätter och nygräddad pizza varje dag.</p>
+                        </div>
+                    </div>
+
+                    <div className="menu-highlight-item">
+                        <div className="menu-highlight-item-img">
+                            <img src="gluttenfria.png" alt="Glutenfria alternativ" />
+                        </div>
+                        <div className="menu-highlight-item-details">
+                            <h3>ALTERNATIV FÖR ALLA</h3>
+                            <p>Vi erbjuder glutenfria, laktosfria och allergivänliga rätter.</p>
+                        </div>
+                    </div>
+                </div>
+
+
                 {
                     selectedCategories.map((category) => (
                         <div>
@@ -91,40 +120,9 @@ export const Menu = () => {
 
                     ))
                 }
-              
-                {/* <div className="m-menu-hero-container">
-                <Slider {...settings} className="m-h-img-container">
-                    <div className="m-h-img-wrapper">
-                        <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
-                    </div>
-                    <div className="m-h-img-wrapper">
-                        <img src="olikapizzor.jpg" alt="Bild 2" />
-                    </div>
-                    <div className="m-h-img-wrapper">
-                        <img src="bildute.jpg" alt="Bild 3" />
-                    </div>
-                </Slider>
 
-                <div className="m-hero-heading">
-                    <div className="m-hero-heading-bg">
-                        <h1>VÅR MENY</h1>
-                        <div className="m-hero-heading-btn">
-                            <Link to={``}>Pizza</Link>
-                            <Link to={``}>Kebabrätter</Link>
-                            <Link to={``}>Grillrätter</Link>
-                            <Link to={``}>Hamburgare</Link>
-                            <Link to={``}>Sallad</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                {/* 
 
-            <div className="m-menu-btns-container">
-
-                <div className="m-btn-heading">
-                    <p>Vår meny bjuder på det bästa av två världar – krispiga pizzor direkt ur ugnen och grillat med härlig rökig smak. Alltid med färska råvaror och passion i varje tugga.</p>
-                </div>
-            </div>
 
             <div className="m-menu-food-info">
                 <div className="m-food-info-content">
