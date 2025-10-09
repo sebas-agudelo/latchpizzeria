@@ -100,19 +100,19 @@
     .menu-highlights {
         width: 100%;
         height: auto;
-        padding: 2rem 0;
+
 
         .menu-highlight-item {
+            padding: 2rem 3rem;
             text-align: center;
             position: relative;
-
+            
             .menu-highlight-item-img {
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
                 background-color: #000000;
                 margin: 0 auto;
-            //    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                 img {
                     width: 100%;
@@ -124,27 +124,28 @@
             }
             .menu-highlight-item-details{
                 h3{
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
                     position: absolute;
-                    top: 43%;
+                    top: 60%;
                     left: 50%;
-                    transform: translate(-50%, -43%);
+                    transform: translate(-50%, -60%);
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     color: #fff;
                     font-size: 1.6rem;
                     padding: 0;
-                    background-color: #fbca49;
+                    background-color: #fbc949;
                     width: 200px;
-                    height: 80px;
+                    height: 75px;
                     border-radius: 0 ;
 border-radius: 0 1rem 1rem 1rem;
                 }
                 
                 p{
                     font-size: 0.87rem;
-                    padding: 3rem 3rem;
+                    // padding: 0 3rem;
+                    margin-top: 3rem;
 
                 }
             }
