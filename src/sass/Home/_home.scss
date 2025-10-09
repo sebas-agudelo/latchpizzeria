@@ -95,7 +95,13 @@ $marginTop: 1.5rem;
                 }
 
                 p {
-                    padding: 0 3rem;
+                    // padding: 0 3rem;
+                                       max-width: 290px;
+
+                    font-size: 0.87rem;
+                    margin: 0 auto;
+
+
                 }
             }
         }
