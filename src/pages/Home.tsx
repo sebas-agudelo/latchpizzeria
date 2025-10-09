@@ -58,7 +58,7 @@ export default function Home({ className }: HomeProps) {
                             </div>
 
                             <div className='home-favorites-info'>
-                                <h3>{p.product_name}</h3>
+                                <h3>{p.product_name.toUpperCase()}</h3>
                                 <p>{p.products_desc}</p>
                             </div>
 

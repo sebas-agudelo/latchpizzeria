@@ -106,7 +106,7 @@
             padding: 2rem 0;
             text-align: center;
             position: relative;
-            
+
             .menu-highlight-item-img {
                 width: 168px;
                 height: 168px;
@@ -122,8 +122,9 @@
                 }
 
             }
-            .menu-highlight-item-details{
-                h3{
+
+            .menu-highlight-item-details {
+                h3 {
                     position: absolute;
                     top: 57%;
                     left: 50%;
@@ -138,14 +139,13 @@
                     background-color: #fbc949;
                     width: 200px;
                     height: 75px;
-                    border-radius: 0 ;
-border-radius: 0 1rem 1rem 1rem;
+                    border-radius: 0;
+                    border-radius: 0 1rem 1rem 1rem;
                 }
-                
-                p{
+
+                p {
                     width: 290px;
                     font-size: 0.87rem;
-                    // padding: 0 3rem;
                     margin: 2rem auto 0;
 
                 }
