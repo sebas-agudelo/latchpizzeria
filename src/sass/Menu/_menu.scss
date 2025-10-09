@@ -152,4 +152,43 @@
             }
         }
     }
+
+    .menu-products{
+        padding: 1rem 1rem;
+        h2{
+            color: #fbca49;
+            font-size: 2rem;
+        }
+
+        .menu-product-content{
+            padding: 1rem 0;
+           
+
+            h3{
+                width: 100%;
+                font-size: 1.57rem;
+                color: #5a5a5a;
+            }
+
+            .menu-product-details{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    font-size: 1rem;
+                    padding: 0.5rem 0 0;
+                }
+
+                #product-desc{
+                    margin-right: 1.5rem;
+                }
+
+                #product-price{
+                    font-size: 1.15rem;
+                }
+            }
+
+        }
+    }
 }

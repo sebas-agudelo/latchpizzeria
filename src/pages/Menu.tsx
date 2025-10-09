@@ -99,28 +99,27 @@ export const Menu = () => {
                     </div>
                 </div>
 
-
                 {
                     selectedCategories.map((category) => (
-                        <div>
+                        <div className="menu-products">
                             <h2>{category.toUpperCase()}</h2>
-
                             {
                                 allProducts.filter((p) => p.category === category)
                                     .map((p) => (
 
-                                        <div>
+                                        <div className="menu-product-content">
                                             <h3>{p.product_name}</h3>
-                                            <p>{p.products_desc}</p>
-                                            <p>{p.product_price}</p>
+
+                                            <div className="menu-product-details">
+                                                <p id="product-desc">{p.products_desc}</p>
+                                                <p id="product-price">{p.product_price}:-</p>
+                                            </div>
                                         </div>
                                     ))
                             }
                         </div>
-
                     ))
                 }
-
                 {/* 
 
 

@@ -3,10 +3,10 @@ import { IProducts } from "../module/Ip";
 export const products: IProducts[] = [
     {
         id: 1,
-        product_img: "1.png",
-        product_name: "Pizza 1",
-        products_desc: "God pizza 1",
-        product_price: 108,
+        product_img: "",
+        product_name: "Margherita",
+        products_desc: "Tomatsås & ost",
+        product_price: 128,
         category: "pizza"
     },
     {
@@ -48,5 +48,13 @@ export const products: IProducts[] = [
         products_desc: "Pommes/ris, kebab, sallad, tomat, lök, peperoni & sås",
         product_price: 98,
         category: "kebabrätter"
+    },
+     {
+        id: 7,
+        product_img: "",
+        product_name: "Napolitano",
+        products_desc: "Tomatsås, ost, oxfilé, räkor, & mozzarellaost",
+        product_price: 150,
+        category: "pizza"
     },
 ]
