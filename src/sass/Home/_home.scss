@@ -95,10 +95,13 @@ $marginTop: 1.5rem;
                 }
 
                 p {
-                    // padding: 0 3rem;
+                
                                        max-width: 290px;
 
-                    font-size: 0.87rem;
+                font-size: 18px;
+                        font-weight: 100;
+                        color: #000000a8;
+                        margin: 0.5rem 0 0;
                     margin: 0 auto;
 
 
@@ -141,11 +144,13 @@ $marginTop: 1.5rem;
             .home-about-text {
                 width: 100%;
                 height: auto;
-                padding: 2rem 1rem;
+                padding: 4rem 1rem;
 
                 h2 {
                     font-size: 2.6rem;
                     margin: 0 0 0.5rem;
+                        color: #000000a8;
+
                 }
 
                 h3 {
@@ -160,14 +165,16 @@ $marginTop: 1.5rem;
                     position: absolute;
                     left: 0%;
                     bottom: 0%;
-                    width: 45%;
+                    width: 35%;
                     transform: translate(-0%, -0%);
-                    border-bottom: 2px solid #fbca49;
+                    border-bottom: 1.5px solid #fbca49;
                     margin: -1.3rem 0;
                 }
 
                 p {
-                    font-size: 0.87rem;
+                      font-size: 18px;
+                        font-weight: 100;
+                        color: #000000a8;
                     line-height: 1.9;
                 }
             }
@@ -197,7 +204,7 @@ $marginTop: 1.5rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2rem 0;
+            padding: 4rem 0;
 
             .home-hours-info {
                 margin: 0 0 1.5rem;
@@ -209,9 +216,11 @@ $marginTop: 1.5rem;
                 }
 
                 p {
-                    font-size: 1rem;
+                    
                     margin: 0 0 1rem;
-                    font-weight: 400;
+                     font-size: 18px;
+                        font-weight: 100;
+                        color: #000000a8;
                 }
             }
 
