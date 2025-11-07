@@ -10,10 +10,10 @@ export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navLinks = [
-        { label: "Startsida", path: "/" },
-        { label: "Meny", path: "/meny" },
-        { label: "Om oss", path: "om-oss" },
-        { label: "Kontakta oss", path: "kontakta-oss" }
+        { label: "STARTSIDA", path: "/" },
+        { label: "MENY", path: "/meny" },
+        { label: "OM OSS", path: "om-oss" },
+        { label: "KONTAKT", path: "kontakta-oss" }
     ]
 
     const listVariants = {

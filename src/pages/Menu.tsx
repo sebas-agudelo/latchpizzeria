@@ -38,8 +38,8 @@ export const Menu = () => {
         vertical: true,
         verticalSwiping: true,
         autoplay: true,
-        speed: 1350,
-        autoplaySpeed: 10000,
+        speed: 1200,
+        autoplaySpeed: 5000,
         cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false
@@ -50,10 +50,10 @@ export const Menu = () => {
                 <div className="menu-hero">
                     <Slider {...settings} className="menu-slider">
                         <div className="menu-slider-img">
-                            <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="Bild 1" />
+                            <img src="olikapizzor.jpg" alt="Bild 1" />
                         </div>
                         <div className="menu-slider-img">
-                            <img src="olikapizzor.jpg" alt="Bild 2" />
+                            <img src="foto1.png" alt="Bild 2" />
                         </div>
                         <div className="menu-slider-img">
                             <img src="bildute.jpg" alt="Bild 3" />
