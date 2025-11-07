@@ -24,6 +24,9 @@ export default function About() {
     <>
     <div id='about-container'>
       <div className='about-content'>
+        {/* <div className="about-latch-pizzeria">
+          <p>Vår meny bjuder på det bästa av två världar krispiga pizzor direkt ur ugnen och grillat med härlig rökig smak. Alltid med färska råvaror och passion i varje tugga.</p>
+        </div> */}
         <div className='about-slider-section'>
           <Slider {...settings} className="about-slider">
             <div className="about-slider-img">
