@@ -29,7 +29,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home className={showHome ? 'hidden' : ""}/>}/>
                     <Route path='/kontakt' element={<Contact />}/>
-                    <Route path='/about' element={<About />}/>
+                    <Route path='/om-oss' element={<About />}/>
 
                     {/* ALLT OM ADMIN */}
                     <Route path='/adminlogin' element={<Signin />}/>

@@ -73,8 +73,7 @@ export const Menu = () => {
                 </div>
 
                 <div className="menu-description">
-
-                    <p>Vår meny bjuder på det bästa av två världar – krispiga pizzor direkt ur ugnen och grillat med härlig rökig smak. Alltid med färska råvaror och passion i varje tugga.</p>
+                    <p>Vår meny bjuder på det bästa av två världar krispiga pizzor direkt ur ugnen och grillat med härlig rökig smak. Alltid med färska råvaror och passion i varje tugga.</p>
                 </div>
 
                 <div className="menu-highlights">
