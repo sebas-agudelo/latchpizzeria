@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Nav from '../components/Nav';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import { motion } from "framer-motion";

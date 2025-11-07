@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
-import { CiPizza } from "react-icons/ci";
-import { CiBurger } from "react-icons/ci";
 import { IProducts } from "../module/Ip";
 import { products } from "../data/productData";
-import { P } from "framer-motion/dist/types.d-DsEeKk6G";
+
 
 export const Menu = () => {
     const [allProducts, setAllProducts] = useState<IProducts[]>([])

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
@@ -8,10 +8,7 @@ import Contact from './pages/Contact';
 import './sass/style.scss';
 import AdminPanel from './pages/AdminPanel';
 import AddProduct from './pages/AddProduct';
-import Categories from './pages/Categories';
-// import { ScrollToTop } from './components/Nav';
 import About from './pages/About';
-import { Footer } from './components/Footer';
 import { Menu } from './pages/Menu';
 
 function App() {
