@@ -12,7 +12,7 @@ export default function Nav() {
 
     useEffect(() => {
             const handleScroll = () => {
-        if(window.scrollY > 250){
+        if(window.scrollY > 298){
             setIsScroll(true)
         }else{
             setIsScroll(false)
