@@ -5,14 +5,8 @@ import { motion } from "framer-motion";
 import { IProducts } from '../module/Ip';
 import { products } from '../data/productData';
 
-interface HomeProps {
-    className?: string; // Gör className optional
-}
-
-export default function Home({ className }: HomeProps) {
+export default function Home() {
     const [allProducts, setAllProducts] = useState<IProducts[]>([])
-    const [isVisible, setIsVisible] = useState(false);
-    const [isFullyScrolled, setIsFullyScrolled] = useState();
 
     if (allProducts.length === 0) {
         setAllProducts(products)
@@ -30,7 +24,7 @@ export default function Home({ className }: HomeProps) {
                             autoPlay
                             loop
                             muted
-                            className={`${isVisible && !isFullyScrolled ? 'visible' : ''}`}
+                       
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 2.8, ease: "linear" }}

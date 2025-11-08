@@ -8,9 +8,7 @@ export const Footer = () => {
     return (
         <footer className="f-footer">
             <div className="f-footer-img-container">
-                <img src="latch-logo-v4.png" />
-                {/* <div className="f-footer-img-wrapper">
-                </div> */}
+                <img src="latch-logo-v4.png" alt="logo"/>
             </div>
 
             <div className="f-footer-icons-wrapper">

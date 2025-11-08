@@ -15,17 +15,8 @@ export const Menu = () => {
         setAllProducts(products)
     }
 
-    // console.log(allProducts);
-
     const selectedCategories = allProducts.map((c) => c.category)
         .filter((cc, aa, array) => array.indexOf(cc) === aa);
-
-    // const selectedCategories: string[] = [];
-    // allProducts.forEach((c) => {
-    //     if (!selectedCategories.includes(c.category)) {
-    //         selectedCategories.push(c.category);
-    //     }
-    // });
 
     const settings = {
         dots: false,
