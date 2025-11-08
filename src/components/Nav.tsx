@@ -8,12 +8,24 @@ import { RiMenu2Line } from "react-icons/ri";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScroll, setIsScroll] = useState(false);
+
+
+    useEffect(() => {
+            const handleScroll = () => {
+        if(window.scrollY > 250){
+            setIsScroll(true)
+        }else{
+            setIsScroll(false)
+        }
+    }
+    window.addEventListener("scroll", handleScroll);
+    }, [])
 
     const navLinks = [
         { label: "STARTSIDA", path: "/" },
         { label: "MENY", path: "/meny" },
         { label: "OM OSS", path: "om-oss" },
-        { label: "KONTAKT", path: "kontakta-oss" }
     ]
 
     const listVariants = {
@@ -31,9 +43,10 @@ export default function Nav() {
         visible: { opacity: 1, y: 0 },
     };
 
+
     return (
         <>
-            <nav>
+            <nav className={`${isScroll ? "navbar-scrolled" : ""}`}>
                 <div className='open-burger-menu-container'>
                     <button onClick={() => { setIsMenuOpen(!isMenuOpen) }}>
                         <RiMenu2Line />
@@ -70,6 +83,7 @@ export default function Nav() {
                                     className={({ isActive }) =>
                                         isActive ? "nav-link active" : "nav-link"
                                     }
+                                    onClick={() => { setIsMenuOpen(!isMenuOpen) }}
                                 >
                                     {items.label}
                                 </NavLink>
@@ -84,7 +98,6 @@ export default function Nav() {
                     </div>
 
                 </div>}
-
 
                 <div className='nav-order-btn-container'>
                     <button>

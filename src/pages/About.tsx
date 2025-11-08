@@ -44,6 +44,7 @@ export default function About() {
             <h3>ALLTID NYTT, ALLTID GOTT <br />
               FRÅN VÅR KÖK TILL DITT BORD</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci nisi consequuntur modi itaque tenetur hic. A porro consequuntur voluptatum minima, eaque aliquid doloremque provident eum asperiores maxime quasi nulla?</p>
+            {/* <h2>Konceptet</h2> */}
           </div>
         </div>
       </div>

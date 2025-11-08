@@ -8,6 +8,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+    transition: background-color 350ms ease;
+  
 
     .open-burger-menu-container{
         width: 33%;
@@ -29,7 +31,7 @@ nav {
 
     .nav-logo-container {
         width: 100px;
-        height: 45px;
+        height: auto;
 
         .logo {
             width: 100%;
@@ -80,7 +82,7 @@ nav {
         transform: translateX(-100%);
         transition: transform 850ms ease-in-out;
         // background-color: #332d1f;
-        background-color: #00000073;
+        background-color: #000000be;
 
         padding: 0 1.5rem;
 
@@ -106,8 +108,9 @@ nav {
 
         .mobile-nav-links-logo-container {
             width: 100px;
-            height: 45px;
-            margin-top: 4rem;
+            height: 60px;
+            margin-top: 5rem;
+            margin-left: 2rem;
 
             .logo-img-container {
                 width: 100%;
@@ -123,17 +126,20 @@ nav {
 
         ul {
             width: 100%;
-            margin-top: 2rem;
-            padding: 0 0.7rem;
+            margin-top: 5rem;
+            margin-left: 2rem;
+
+            // padding: 0 0.7rem;
 
             li {
                 list-style: none;
-                padding: 0 0 2rem;
+                padding: 0 0 2.5rem;
 
                 a {
                     text-decoration: none;
-                    font-size: 1.3rem;
-                    color: #fff;
+                    // font-size: 1.3rem;
+                    font-size: 36px;
+                    color: #fbca49;
                     font-weight: 500;
                 }
             }
@@ -145,6 +151,11 @@ nav {
         transform: translateX(0);
     }
 }
+
+  .navbar-scrolled{
+         background-color: #ffffff;
+         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
 
 @media screen and (min-width: 768px) {
     nav {
