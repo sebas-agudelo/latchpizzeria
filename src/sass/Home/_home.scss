@@ -76,7 +76,7 @@ $marginTop: 1.5rem;
                 border-radius: 50%;
                 background-color: #000000;
                 margin: 0 auto;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
                 img {
                     width: 100%;
@@ -184,6 +184,7 @@ $marginTop: 1.5rem;
 
     .home-hours {
         width: 100%;
+        margin: 0 0 6px;
         height: auto;
 
         .home-hours-img {
@@ -288,8 +289,6 @@ $marginTop: 1.5rem;
                     color: #fbca49;
                     font-size: 4rem;
                 }
-
-             
             }
         }
 
@@ -359,7 +358,6 @@ $marginTop: 1.5rem;
             width: 100%;
             height: 100%;
 
-            //  border-top: 0.5px solid #fbca49;
             .home-about-content {
                 width: 100%;
                 height: 100%;
@@ -417,7 +415,7 @@ $marginTop: 1.5rem;
             width: 100%;
             height: 100%;
             position: relative;
-    
+
 
             .home-hours-img {
                 width: 50%;
@@ -451,13 +449,6 @@ $marginTop: 1.5rem;
                         margin: 0 0 1rem;
 
                     }
-
-                    p {
-                        //  font-size: 0.87rem;
-                        // margin: 0 0 1rem;
-                        // font-weight: 400;
-                    }
-
                 }
 
                 .home-hours-buttons {

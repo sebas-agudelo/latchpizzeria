@@ -9,7 +9,6 @@ export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
 
-
     useEffect(() => {
             const handleScroll = () => {
         if(window.scrollY > 298){
@@ -18,6 +17,7 @@ export default function Nav() {
             setIsScroll(false)
         }
     }
+    
     window.addEventListener("scroll", handleScroll);
     }, [])
 

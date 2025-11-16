@@ -35,7 +35,7 @@ export const products: IProducts[] = [
     },
      {
         id: 5,
-        product_img: "burgare90g.jpg",
+        product_img: "images.jpg",
         product_name: "Hamburgare 150g",
         products_desc: "Bröd, kött, ost, sallad, tomat, lök & sås",
         product_price: 105,

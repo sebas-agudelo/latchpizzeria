@@ -24,7 +24,9 @@ export default function Home() {
                             autoPlay
                             loop
                             muted
-                       
+                            playsInline
+                            webkit-playsinline="true"
+                            preload="auto"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 2.8, ease: "linear" }}
@@ -74,8 +76,8 @@ export default function Home() {
                             </h3>
 
                             <motion.p
-                                initial={{ opacity: 0, x: -100 }}  
-                                whileInView={{ opacity: 1, x: 0 }} 
+                                initial={{ opacity: 0, x: -100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, ease: "linear" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
@@ -105,38 +107,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
-            {/* <div className='last-container'>
-                <div className='vin-text-container'>
-
-                    <h2> KOM OCH BESÖK OSS</h2>
-                    <motion.p
-                        initial={{ opacity: 0 }}       // utgångsläge
-                        whileInView={{ opacity: 1 }}      // när den syns i viewport
-                        transition={{ duration: 0.8, ease: "easeInOut" }}
-                        viewport={{ once: true, amount: 0.9 }}               // kör bara en gång
-                    >
-                        Vi finns på norr i Eskilstuna
-                    </motion.p>
-                </div>
-                <div className='vin-img-container'>
-                    <div className='vin-img-wrapper'>
-                        <img src="latch.jpg" alt="VIN.webp" />
-                    </div>
-                    <div className='vin-img-wrapper'>
-                        <img src="bildute.jpg" alt="VIN.webp" />
-                    </div>
-                    <div className='vin-img-wrapper'>
-                        <img src=" olikapizzor.jpg" alt="VIN.webp" />
-                    </div>
-                    <div className='vin-img-wrapper'>
-                        <img src="depositphotos_309587372-stock-photo-grilled-chicken-kebabs-platter-with.jpg" alt="VIN.webp" />
-                    </div>
-
-
-                </div>
-            </div>  */}
-
                 <Footer />
             </div>
         </>
